@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #350101;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #350101;
+    font-family: 'Arial', sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+}
