@@ -10,37 +10,37 @@
 </head>
 <body>
 
-    <div id="wrapper">
-        <div id="info">
+    <div id="wrapper" class="p-5 d-flex flex-column justify-content-evenly align-items-center">
+        <div id="info" class="content-wrapper d-flex flex-column border border-3 border-warning rounded rounded-5 p-5 align-items-center justify-content-center row-gap-5">
             <div>
-                <div>
+                <div class="d-flex align-items-center justify-content-center column-gap-3">
                     <img id="titleIcon" src="https://www.svgrepo.com/show/191615/light-bulb.svg">
-                    <h1>Villanyszámla költségek</h1>
+                    <h1 class="text-warning font-monospace text-center">Villanyszámla költségek</h1>
                     <img id="titleIcon" src="https://www.svgrepo.com/show/191615/light-bulb.svg">
-                </div>
-                <hr>
+                </div class="w-100 border border-warning border-2 opacity-100 rounded rounded-5">
+                <hr class="w-100 border border-warning border-2 opacity-100 rounded rounded-5">
             </div>
 
             <nav>
 
             </nav>
 
-            <div id="info">
-                <div>
-                    <div>
+            <div id="info" class="w-100 d-flex flex-column border border-3 border-warning rounded rounded-5 p-5 align-items-center justify-content-center">
+                <div class="mx-auto">
+                    <div class="d-flex align-items-center justify-content-center column-gap-3">
                         <svg id="infoIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="10" stroke="#ffc107" stroke-width="1.5"></circle> <path d="M12 17V11" stroke="#ffc107" stroke-width="1.5" stroke-linecap="round"></path> <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 11 9)" fill="#ffc107"></circle> </g></svg>
-                        <h2>Használati Útmutató</h2>
+                        <h2 class="text-center text-warning font-monospace">Használati Útmutató</h2>
                         <svg id="infoIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="10" stroke="#ffc107" stroke-width="1.5"></circle> <path d="M12 17V11" stroke="#ffc107" stroke-width="1.5" stroke-linecap="round"></path> <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 11 9)" fill="#ffc107"></circle> </g></svg>
                     </div>
-                    <hr>
+                    <hr class="w-100 border border-warning border-2 opacity-100 rounded rounded-5 mb-5">
                 </div>
-                <p>Ez a rendszer lehetővé teszi a cégek vagy magánszemélyek számára a fogyasztás és egységár alapján történő költségkalkulációt.</p>
-                <p>A következő lépésekkel adhatja meg a szükséges adatokat:</p>
+                <p class="text-light">Ez a rendszer lehetővé teszi a cégek vagy magánszemélyek számára a fogyasztás és egységár alapján történő költségkalkulációt.</p>
+                <p class="text-light">A következő lépésekkel adhatja meg a szükséges adatokat:</p>
 
-                <ol>
+                <ol class="font-monospace text-warning m-0">
                     <li>
-                        <strong>Egységár megadása</strong>
-                        <ul>
+                        <strong class="font-monospace">Egységár megadása</strong>
+                        <ul class="text-light">
                             <li>
                                 <p>Az egységár mező az a hely, ahol meg kell adnia a kWh energia költségét.</p>
                             </li>
@@ -48,35 +48,35 @@
                                 <p>A rendszer minden egyes kilowattóra (kWh) fogyasztása után ezen az áron fogja kiszámolni a fizetendő díjat.</p>
                             </li>
                             <li>
-                                <p><strong>Példa adat:</strong> 36.386</p>
+                                <p><strong class="text-warning">Példa adat:</strong> 36.386</p>
                             </li>
                         </ul>
                     </li>
 
                     <li>
                         <strong>Fogyasztási adatok megadása</strong>
-                        <ul>
+                        <ul class="text-light">
                             <li>
                                 <p>A fogyasztási adatok mezőben, amely egy textarea, kell megadnia a fogyasztási adatokat hónapok és évek szerint, mátrix formátumban.</p>
                             </li>
 
                             <li>
-                                <p><strong>Formátum:</strong> Minden év adata egy-egy oszlopot alkot. Az oszlopok fejlécében az évek szerepelnek, az alatta lévő sorokban pedig az adott év havi fogyasztásai.</p>
+                                <p><strong class="text-warning">Formátum:</strong> Minden év adata egy-egy oszlopot alkot. Az oszlopok fejlécében az évek szerepelnek, az alatta lévő sorokban pedig az adott év havi fogyasztásai.</p>
                             </li>
 
                             <li>
-                                <p><strong>A mátrix felépítése:</strong></p>
+                                <p><strong class="text-warning">A mátrix felépítése:</strong></p>
                             </li>
 
-                            <ul>
+                            <ul class="text-light">
                                 <li>Az első sor az évek listáját tartalmazza (pl. 2020, 2021, 2022, 2023, 2024).</li>
                                 <li>A második sor az egyes évek januári hónapjára vonatkozó fogyasztásokat tartalmazza.</li>
                                 <li>A harmadik sor februári, és így tovább, minden hónapra egy-egy sorban szerepel a fogyasztás.</li>
                             </ul>
 
                             <li>
-                                <p><strong>Példa:</strong></p>
-                                <pre>
+                                <p><strong class="text-warning">Példa:</strong></p>
+                                <pre class="text-light">
 2020,2021,2022,2023,2024
 108,69,217,396,265
 69,223,190,400,230
@@ -92,9 +92,9 @@
 33,210,318,10,303</pre>
                             </li>
 
-                            <ul>
+                            <ul class="text-light">
                                 <li>
-                                    <p><strong>Fontos:</strong> A soroknak pontosan 13 értéket kell tartalmazniuk (az első sor az évszám, maradék 12 érték az évszám alatt pedig az adott hónaphoz tartozó fogyasztást jelzi), a megfelelő évek szerint.</p>
+                                    <p><strong class="text-warning">Fontos:</strong> A soroknak pontosan 13 értéket kell tartalmazniuk (az első sor az évszám, maradék 12 érték az évszám alatt pedig az adott hónaphoz tartozó fogyasztást jelzi), a megfelelő évek szerint.</p>
                                 </li>
                             </ul>
                         </ul>
@@ -102,18 +102,18 @@
 
                     <li>
                         <strong>Kedvezmény feltételei</strong>
-                        <ul>
+                        <ul class="text-light">
                             <li>
-                                <p>A rendszer automatikusan kiszámítja a kedvezményeket, ha két egymást követő évben a fizetett éves díj meghaladja a 350.000 Ft-ot. Ebben az esetben a következő évben minden hónapra 13%-os kedvezményt alkalmaz a rendszer. Az adott éves és a hozzá tartozó havidíj <strong>kék</strong> színnel, valamint egy '<strong>*</strong>' karakterrel lesznek az adatok megjelölve.</p>
+                                <p>A rendszer automatikusan kiszámítja a kedvezményeket, ha két egymást követő évben a fizetett éves díj meghaladja a 350.000 Ft-ot. Ebben az esetben a következő évben minden hónapra 13%-os kedvezményt alkalmaz a rendszer. Az adott éves és a hozzá tartozó havidíj <strong class="text-info">kék</strong> színnel, valamint egy '<strong class="text-info">*</strong>' karakterrel lesznek az adatok megjelölve.</p>
                             </li>
                         </ul>
                     </li>
 
                     <li>
                         <strong>Adatok elküldése</strong>
-                        <ul>
+                        <ul class="text-light">
                             <li>
-                                <p>Végső soron, ha mindent mezőt kitöltöttünk megfelelően, akkor kattintsunk a <strong>'Kiszámítás'</strong> gombra.</p>
+                                <p>Végső soron, ha mindent mezőt kitöltöttünk megfelelően, akkor kattintsunk a <strong class="text-warning">'Kiszámítás'</strong> gombra.</p>
                             </li>
                         </ul>
                     </li>
