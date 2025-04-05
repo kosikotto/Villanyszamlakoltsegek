@@ -26,3 +26,57 @@ body {
     flex-grow: 1;
     width: 100%;
 }
+
+.content-wrapper {
+    max-width: 840px !important;
+}
+
+#titleIcon {
+    height: 100px;
+    width: 100px;
+}
+
+#navIcon {
+    height: 40px;
+    width: 40px;
+}
+
+#infoIcon {
+    height: 75px;
+    width: 75px;
+}
+
+#info {
+    background-image: linear-gradient(147deg, #470101 0%, #a01313 37%, #672121 100%);
+}
+
+h1, h2, #titleIcon, label, #infoIcon {
+    text-shadow: 5px 5px 5px black;
+}
+
+hr, button, table {
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+.container {
+    background-color: #672121;
+}
+
+#scrollTopIcon {
+    background-color: rgba(88, 84, 84, 0.50);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+    transition: background-color 0.25s;
+}
+
+#scrollTopIcon:hover {
+    background-color: rgba(150, 150, 0, 0.8);
+    cursor: pointer;
+}
+
+#scrollTopIcon:active {
+    transform: translateY(5%);
+    background-color: rgb(75, 75, 0, 0.8);
+}
