@@ -1,0 +1,23 @@
+#datas {
+    resize: none;
+}
+
+#calculate, #EditButton {
+    transition: all 0.5s;
+}
+
+#calculate:hover, #EditButton:hover {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.resultDivHidden {
+    display: none;
+}
+
+.resultDivVisible {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
