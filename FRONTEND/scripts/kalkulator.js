@@ -402,3 +402,20 @@ function Edit() {
     location.hash = '#';
     location.hash = 'formDiv';
 }
+
+function RemoveResultDivElements(resultDiv) {
+    let elementsToRemove = [
+        'calculationTitle',
+        'calculationTable',
+        'EditButton',
+        'calculationHr',
+        'AlertBadInput'
+    ];
+
+    elementsToRemove.forEach(id => {
+        let removeElement = document.getElementById(id);
+        if (removeElement) {
+            resultDiv.removeChild(removeElement);
+        }
+    });
+}
