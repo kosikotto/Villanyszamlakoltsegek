@@ -391,3 +391,14 @@ function ClearInputs() {
     inputEgysegar.value = '';
     textareaDatas.value = '';
 }
+
+function Edit() {
+    let inputEgysegar = document.getElementById('egysegar');
+    let textareaDatas = document.getElementById('datas');
+
+    inputEgysegar.value = egysegar;
+    textareaDatas.value = datas;
+
+    location.hash = '#';
+    location.hash = 'formDiv';
+}
