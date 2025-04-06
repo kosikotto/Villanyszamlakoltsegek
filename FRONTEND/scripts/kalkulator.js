@@ -109,13 +109,13 @@ function InputCheck(egysegar, datas) {
             }
             else {
                 helyes = false;
-                alert('HIBA! Az "egységár" helyére olyan számot adj meg, ami "-2000" és "2000" közé esik.')
+                alert('HIBA! A "fogyasztási adatok" nem megfelelően lettek kitöltve, kérlek ellenőrizd, hogy minden hónapot kitöltöttél-e, valamint győződj meg, hogy az évszámokhoz egész számot írtál be.')
             }
         }
 
         else {
             helyes = false;
-            alert('HIBA! Az "egységár" helyére számot adj meg.')
+            alert('HIBA! Az "egységár" helyére olyan számot adj meg, ami "-2000" és "2000" közé esik.')
         }
     }
 
