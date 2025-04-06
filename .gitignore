@@ -1,8 +1,21 @@
+# Build output
 **/bin/
 **/obj/
+
+# User-specific files
 *.user
 *.suo
-*.log
-*.vs/
+
+# VS Code/VS config
 .vscode/
+.vs/
+
+# Logs
+*.log
+
+# Rider
+.idea/
+*.sln.iml
+
+# Others
 *.csproj.user
