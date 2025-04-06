@@ -73,5 +73,30 @@ namespace Villanyszamla_backend.Data
 
             return values;
         }
+        private SecondaryData HavidijKiszamitas(SecondaryData datas, int rows, int cols, string[,] rawData, double egysegar)
+        {
+            Dictionary<Honapok, double[]> HaviKoltes = new Dictionary<Honapok, double[]>();
+
+            for (int i = 1; i < rows; i++)
+            {
+                double[] local = new double[cols];
+                for (int j = 0; j < cols; j++)
+                {
+                    local[j] = (double)(double.Parse(rawData[i, j], CultureInfo.InvariantCulture) * egysegar + 23.4);
+                }
+
+                HaviKoltes.Add((Honapok)(i - 1), local);
+            }
+
+            for (int i = 0; i < cols; i++)
+            {
+                datas.Evszam.Add(int.Parse(rawData[0, i]));
+            }
+
+            datas.HaviKoltes = HaviKoltes;
+
+            return datas;
+        }
+
     }
 }
