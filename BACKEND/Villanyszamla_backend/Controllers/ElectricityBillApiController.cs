@@ -12,10 +12,10 @@ namespace T0Y9UZ_FullStack_Feleves.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<IncomeData> GetCalculation([FromQuery] IncomeData data)
+        public IEnumerable<SecondaryData> GetCalculation([FromQuery] IncomeData data)
         {
             
-            return new List<IncomeData>() { data };
+            return new List<SecondaryData>();
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Villanyszamla_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14b05cb7963247fc19cc1ad81617c39873bfb213")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b554f083e408af9bd4641c2be602eba5d245fa4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Villanyszamla_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Villanyszamla_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
