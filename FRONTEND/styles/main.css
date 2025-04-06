@@ -80,3 +80,33 @@ hr, button, table {
     transform: translateY(5%);
     background-color: rgb(75, 75, 0, 0.8);
 }
+
+@media (max-width: 680px) {
+
+    #titleIcon {
+        height: 75px !important;
+        width: 75px !important;
+    }
+
+    #navIcon {
+        height: 20px !important;
+        width: 20px !important;
+    }
+
+    #infoIcon {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    #info {
+        padding: 3% !important;
+    }
+}
