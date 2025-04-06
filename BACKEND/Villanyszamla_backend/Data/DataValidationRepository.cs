@@ -97,6 +97,23 @@ namespace Villanyszamla_backend.Data
 
             return datas;
         }
+        private SecondaryData EveskoltsegKiszamitas(SecondaryData datas, int cols, int rows)
+        {
+            for (int i = 0; i < cols; i++)
+            {
+                double summaYear = 0;
+
+                for (int j = 0; j < rows - 1; j++)
+                {
+                    summaYear += datas.HaviKoltes[(Honapok)j][i];
+                }
+                datas.EvesKoltseg.Add(summaYear);
+                datas.KedvezmenyesEvek.Add(false);
+            }
+
+            return datas;
+        }
+
 
     }
 }
