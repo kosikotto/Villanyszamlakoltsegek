@@ -372,6 +372,7 @@ function ErrorDraw(error) {
     div.classList.add('border');
     div.classList.add('border-3');
     div.classList.add('border-warning');
+    div.classList.add('m-0');
     div.role = 'alert';
 
     let h3 = document.createElement('h3');
@@ -403,23 +404,6 @@ function Edit() {
     location.hash = 'formDiv';
 }
 
-function RemoveResultDivElements(resultDiv) {
-    let elementsToRemove = [
-        'calculationTitle',
-        'calculationTable',
-        'EditButton',
-        'calculationHr',
-        'AlertBadInput'
-    ];
-
-    elementsToRemove.forEach(id => {
-        let removeElement = document.getElementById(id);
-        if (removeElement) {
-            resultDiv.removeChild(removeElement);
-        }
-    });
-}
-
 function CheckIfNotEmpty() {
     let inputEgysegar = document.getElementById('egysegar');
     let textareaDatas = document.getElementById('datas');
@@ -435,4 +419,21 @@ function CheckIfNotEmpty() {
         let calculate = document.getElementById('calculate');
         calculate.setAttribute('disabled', '');
     }
+}
+
+function RemoveResultDivElements(resultDiv) {
+    let elementsToRemove = [
+        'calculationTitle',
+        'calculationTable',
+        'EditButton',
+        'calculationHr',
+        'AlertBadInput'
+    ];
+
+    elementsToRemove.forEach(id => {
+        let removeElement = document.getElementById(id);
+        if (removeElement) {
+            resultDiv.removeChild(removeElement);
+        }
+    });
 }
