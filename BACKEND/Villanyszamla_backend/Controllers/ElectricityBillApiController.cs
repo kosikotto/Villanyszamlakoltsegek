@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using T0Y9UZ_FullStack_Feleves.Models;
+using Villanyszamla_backend.Data;
 
 namespace T0Y9UZ_FullStack_Feleves.Controllers
 {
@@ -7,15 +8,17 @@ namespace T0Y9UZ_FullStack_Feleves.Controllers
     [Route("[controller]")]
     public class ElectricityBillApiController : ControllerBase
     {
+        IDataValidationRepository dataValidationRepository { get; set; }
         public ElectricityBillApiController()
         {
+            this.dataValidationRepository = new DataValidationRepository();
         }
 
         [HttpGet]
         public IEnumerable<SecondaryData> GetCalculation([FromQuery] IncomeData data)
         {
-            
-            return new List<SecondaryData>();
+
+            return dataValidationRepository.Calculate(data);
         }
     }
 }
