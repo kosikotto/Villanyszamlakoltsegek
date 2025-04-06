@@ -38,13 +38,21 @@ function FetchData(egysegar, datas) {
     .then(responseData => {
         global = responseData[0];
 
-        TableDraw();
-        location.hash = '#';
-        location.hash = 'resultDiv';
+        if (global.siker) {
+            TableDraw();
+            ClearInputs();
+            location.hash = '#';
+            location.hash = 'resultDiv';
+        }
 
+        else {
+            ErrorDraw('Hibás bemeneti adatokat adtál meg, győződj meg róla, hogy az "egységár" esetében számot adj meg, valamint a "fogyasztásnál" minden oszlopba 13 érték szerepeljen, vesszővel legyenek elválasztva, ha több oszlopot szeretnél felvinni.');
+            location.hash = '#';
+            location.hash = 'resultDiv';
+        }
     })
     .catch(error => {
-        
+        ErrorDraw("Hiba történt a lekérdezés során: " + error);
     });
 }
 
@@ -345,4 +353,33 @@ function TableDraw() {
 
     wrapper.classList.add('resultDivVisible');
 
+}
+
+function ErrorDraw(error) {
+    
+    let resultDiv = document.getElementById('resultDiv');
+    RemoveResultDivElements(resultDiv);
+
+    resultDiv.classList.add('resultDivVisible');
+    resultDiv.classList.remove('resultDivHidden');
+
+    let div = document.createElement('div');
+    div.id = 'AlertBadInput';
+    div.classList.add('alert');
+    div.classList.add('alert-danger');
+    div.classList.add('rounded');
+    div.classList.add('rounded-5');
+    div.classList.add('border');
+    div.classList.add('border-3');
+    div.classList.add('border-warning');
+    div.role = 'alert';
+
+    let h3 = document.createElement('h3');
+    h3.classList.add('text-danger');
+    h3.classList.add('text-center');
+    h3.classList.add('m-0');
+    h3.innerHTML = error;
+
+    div.appendChild(h3);
+    resultDiv.appendChild(div);
 }
