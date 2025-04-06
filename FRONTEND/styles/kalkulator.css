@@ -21,3 +21,49 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 875px) {
+    #resultDiv {
+        padding: 0% !important;
+    }
+
+    #resultDiv h1 {
+        font-size: 28px !important;
+    }
+
+    #resultDiv table thead tr th {
+        font-size: 20px !important;
+    }
+
+    #resultDiv table tbody tr td, #resultDiv table tbody tr td h5{
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 645px) {
+    #resultDiv h1 {
+        font-size: 24px !important;
+    }
+
+    #resultDiv table thead tr th {
+        font-size: 16px !important;
+    }
+
+    #resultDiv table tbody tr td, #resultDiv table tbody tr td h5{
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 510px) {
+    #resultDiv h1 {
+        font-size: 20px !important;
+    }
+
+    #resultDiv table thead tr th {
+        font-size: 12px !important;
+    }
+
+    #resultDiv table tbody tr td, #resultDiv table tbody tr td h5{
+        font-size: 6px !important;
+    }
+}
