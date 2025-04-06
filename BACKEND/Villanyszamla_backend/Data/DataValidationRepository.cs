@@ -1,5 +1,5 @@
 ﻿using System.Globalization;
-using T0Y9UZ_FullStack_Feleves.Models;
+using Villanyszamla_backend.Models;
 
 namespace Villanyszamla_backend.Data
 {
@@ -14,15 +14,34 @@ namespace Villanyszamla_backend.Data
 
                 var col_rows = CreateMatrix(data, cols, rows);
 
-                double egysegar = double.Parse(data.egysegar, CultureInfo.InvariantCulture);
+                var checkValues = ErtekekCheck(rows, cols, col_rows);
 
-                if (egysegar >= -2000 && egysegar <= 2000)
+                if (checkValues)
                 {
-                    SecondaryData datas = new SecondaryData();
+                    double egysegar = double.Parse(data.egysegar, CultureInfo.InvariantCulture);
 
-                    datas.Siker = true;
+                    if (egysegar >= -2000 && egysegar <= 2000)
+                    {
+                        SecondaryData datas = new SecondaryData();
+                        datas = HavidijKiszamitas(datas, rows, cols, col_rows, egysegar);
 
-                    return new List<SecondaryData>() { datas };
+                        datas = EveskoltsegKiszamitas(datas, cols, rows);
+
+                        datas = EgymastKovetoEvekAkcio(datas, cols, rows);
+
+                        datas.Siker = true;
+
+                        return new List<SecondaryData>() { datas };
+                    }
+
+                    else
+                    {
+                        SecondaryData datas = new SecondaryData();
+
+                        datas.Siker = false;
+
+                        return new List<SecondaryData>() { datas };
+                    }
                 }
 
                 else
@@ -72,6 +91,60 @@ namespace Villanyszamla_backend.Data
             }
 
             return values;
+        }
+        private bool ErtekekCheck(int rows, int cols, string[,] rawData)
+        {
+            for (int i = 0; i < cols; i++)
+            {
+                int countRows = 0;
+                for (int j = 0; j < rows; j++)
+                {
+                    var element = rawData[j, i];
+
+                    if (rawData[j, i] != null && rawData[j, i].Length > 0)
+                    {
+                        if (j == 0)
+                        {
+                            try
+                            {
+                                int tmp = int.Parse(rawData[j, i]);
+                                countRows++;
+                            }
+
+                            catch
+                            {
+                                return false;
+                            }
+                        }
+
+                        else
+                        {
+                            try
+                            {
+                                double tmp = double.Parse(rawData[j, i], CultureInfo.InvariantCulture);
+                                countRows++;
+                            }
+
+                            catch
+                            {
+                                return false;
+                            }
+                        }
+                    }
+
+                    else
+                    {
+                        return false;
+                    }
+                }
+
+                if (countRows != 13)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
         private SecondaryData HavidijKiszamitas(SecondaryData datas, int rows, int cols, string[,] rawData, double egysegar)
         {
@@ -124,9 +197,9 @@ namespace Villanyszamla_backend.Data
                     double localSumma = 0;
                     for (int j = 0; j < rows - 1; j++)
                     {
-                        var honap = (Honapok)j;
-                        datas.HaviKoltes[honap][i] -= (int)(datas.HaviKoltes[honap][i] * 0.13);
-                        localSumma += datas.HaviKoltes[honap][i];
+                        var honapocska = (Honapok)j;
+                        datas.HaviKoltes[honapocska][i] -= (int)(datas.HaviKoltes[honapocska][i] * 0.13);
+                        localSumma += datas.HaviKoltes[honapocska][i];
                     }
 
                     datas.EvesKoltseg[i] = localSumma;

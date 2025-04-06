@@ -1,4 +1,4 @@
-﻿using T0Y9UZ_FullStack_Feleves.Models;
+﻿using Villanyszamla_backend.Models;
 
 namespace Villanyszamla_backend.Data
 {

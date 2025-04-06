@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace T0Y9UZ_FullStack_Feleves.Models
+﻿namespace Villanyszamla_backend.Models
 {
     public enum Honapok
     {

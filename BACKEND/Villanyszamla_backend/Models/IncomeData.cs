@@ -1,4 +1,4 @@
-﻿namespace T0Y9UZ_FullStack_Feleves.Models
+﻿namespace Villanyszamla_backend.Models
 {
     public class IncomeData
     {

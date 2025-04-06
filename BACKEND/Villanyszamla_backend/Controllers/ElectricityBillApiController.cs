@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using T0Y9UZ_FullStack_Feleves.Models;
+using Villanyszamla_backend.Models;
 using Villanyszamla_backend.Data;
 
 namespace T0Y9UZ_FullStack_Feleves.Controllers
