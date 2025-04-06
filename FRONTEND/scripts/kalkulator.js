@@ -383,3 +383,11 @@ function ErrorDraw(error) {
     div.appendChild(h3);
     resultDiv.appendChild(div);
 }
+
+function ClearInputs() {
+    let inputEgysegar = document.getElementById('egysegar');
+    let textareaDatas = document.getElementById('datas');
+
+    inputEgysegar.value = '';
+    textareaDatas.value = '';
+}
