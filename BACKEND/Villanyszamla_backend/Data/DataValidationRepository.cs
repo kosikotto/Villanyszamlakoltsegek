@@ -113,7 +113,39 @@ namespace Villanyszamla_backend.Data
 
             return datas;
         }
+        private SecondaryData EgymastKovetoEvekAkcio(SecondaryData datas, int cols, int rows)
+        {
+            int counter = 0;
+            for (int i = 0; i < cols; i++)
+            {
+                double tmp = datas.EvesKoltseg[i];
+                if (counter == 2)
+                {
+                    double localSumma = 0;
+                    for (int j = 0; j < rows - 1; j++)
+                    {
+                        var honap = (Honapok)j;
+                        datas.HaviKoltes[honap][i] -= (int)(datas.HaviKoltes[honap][i] * 0.13);
+                        localSumma += datas.HaviKoltes[honap][i];
+                    }
 
+                    datas.EvesKoltseg[i] = localSumma;
+                    datas.KedvezmenyesEvek[i] = true;
 
+                    counter = 0;
+                }
+
+                if (tmp > 350000)
+                {
+                    counter++;
+                }
+                else
+                {
+                    counter = 0;
+                }
+            }
+
+            return datas;
+        }
     }
 }
