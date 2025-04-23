@@ -1,4 +1,6 @@
 function ScrollTop() {
-    location.hash = '#'
-    location.hash = 'top';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
