@@ -121,8 +121,6 @@ function FetchData(egysegar, datas) {
         if (global.siker) {
             TableDraw();
             ClearInputs();
-            location.hash = '#';
-            location.hash = 'resultDiv';
         }
 
         else {
@@ -328,13 +326,11 @@ function TableDraw() {
     globalTableVisible = true;
 
     CheckTableOnResize();
+
+    ScrollToResultDiv();
 }
 
 function ErrorDraw(error) {
-
-    location.hash = '#'
-    location.hash = 'resultDiv';
-
     let resultDiv = document.getElementById('resultDiv');
     RemoveResultDivElements(resultDiv);
 
@@ -354,6 +350,8 @@ function ErrorDraw(error) {
     resultDiv.appendChild(div);
 
     globalTableVisible = false;
+
+    ScrollToResultDiv();
 }
 
 function RemoveResultDivElements(resultDiv) {
@@ -371,4 +369,14 @@ function RemoveResultDivElements(resultDiv) {
             resultDiv.removeChild(removeElement);
         }
     });
+}
+
+function ScrollToResultDiv() {
+    const element = document.getElementById('resultDiv');
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
 }
