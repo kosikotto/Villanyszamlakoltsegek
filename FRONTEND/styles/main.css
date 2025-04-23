@@ -6,6 +6,7 @@
 
 html {
     background-color: #350101;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -28,7 +29,7 @@ body {
 }
 
 .content-wrapper {
-    max-width: 840px !important;
+    max-width: 840px;
 }
 
 #titleIcon {
@@ -46,12 +47,16 @@ body {
     width: 75px;
 }
 
-#info {
+#info, #info2 {
     background-image: linear-gradient(147deg, #470101 0%, #a01313 37%, #672121 100%);
 }
 
 h1, h2, #titleIcon, label, #infoIcon {
     text-shadow: 5px 5px 5px black;
+}
+
+h1, h2 {
+    margin: 0% !important;
 }
 
 hr, button, table {
@@ -71,14 +76,16 @@ hr, button, table {
     transition: background-color 0.25s;
 }
 
-#scrollTopIcon:hover {
-    background-color: rgba(150, 150, 0, 0.8);
-    cursor: pointer;
-}
-
 #scrollTopIcon:active {
     transform: translateY(5%);
     background-color: rgb(75, 75, 0, 0.8);
+}
+
+@media (min-width: 1001px) {
+    #scrollTopIcon:hover {
+        background-color: rgba(150, 150, 0, 0.8);
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 680px) {
@@ -106,7 +113,75 @@ hr, button, table {
         font-size: 20px !important;
     }
 
-    #info {
-        padding: 3% !important;
+    #info, #info2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    #wrapper {
+        padding: 8px !important;
+    }
+
+    #info, #info2 {
+        padding: 6px !important;
+    }
+
+    .container {
+        padding: 15px !important;
+    }
+
+    #titleIcon {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    #infoIcon {
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+    #arrowUp {
+        margin-bottom: 48px !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    #wrapper {
+        padding: 6px !important;
+    }
+
+    #info, #info2 {
+        padding: 4px !important;
+    }
+
+    .container {
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 330px) {
+    #wrapper {
+        padding: 6px !important;
+        border: none !important;
+    }
+
+    #info, #info2 {
+        padding: 4px !important;
+        border: none !important;
+    }
+
+    .container {
+        padding: 6px !important;
+        border: none !important;
     }
 }
