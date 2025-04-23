@@ -16,7 +16,7 @@ namespace Villanyszamla_backend.Data
 
                 double egysegar = double.Parse(data.egysegar, CultureInfo.InvariantCulture);
 
-                if (egysegar >= -2000 && egysegar <= 2000)
+                if (egysegar >= 0 && egysegar <= 2000)
                 {
                     ResponseData datas = new ResponseData();
                     datas = HavidijKiszamitas(datas, rows, cols, col_rows, egysegar);

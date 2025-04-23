@@ -1,17 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\",
+  "WorkspaceRootPath": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\controllers\\electricitybillapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:controllers\\electricitybillapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\data\\datavalidationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:data\\datavalidationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,38 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ElectricityBillApiController.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Controllers\\ElectricityBillApiController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ElectricityBillApiController.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Controllers\\ElectricityBillApiController.cs",
-              "RelativeToolTip": "Controllers\\ElectricityBillApiController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T12:05:32.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataValidationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Data\\DataValidationRepository.cs",
-              "RelativeDocumentMoniker": "Data\\DataValidationRepository.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Data\\DataValidationRepository.cs",
-              "RelativeToolTip": "Data\\DataValidationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAN4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:57:44.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
+              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T11:57:33.546Z",
               "EditorCaption": ""

@@ -30,7 +30,7 @@ function InputCheck(egysegar, datas) {
     let helyes = true;
 
     if (egysegar != null && egysegar.length > 0) {
-        if (egysegar <= 2000 && egysegar >= -2000) {
+        if (egysegar <= 2000 && egysegar >= 0) {
             let rows = datas.split('\n');
             let cols = rows[0].split(',');
             if (rows.length > 0) {
@@ -85,7 +85,7 @@ function InputCheck(egysegar, datas) {
 
         else {
             helyes = false;
-            alert('❌ HIBA! Az "egységár" helyére olyan számot adj meg, ami "-2000" és "2000" közé esik.')
+            alert('❌ HIBA! Az "egységár" helyére olyan számot adj meg, ami "0" és "2000" közé esik.')
         }
     }
 
@@ -118,9 +118,6 @@ function FetchData(egysegar, datas) {
     .then(responseData => {
         global = responseData;
 
-        console.log(responseData);
-        
-
         if (global.siker) {
             TableDraw();
             ClearInputs();
@@ -149,7 +146,7 @@ function FetchData(egysegar, datas) {
             userFriendlyMessage = `❌ Váratlan hiba történt a művelet végrehajtása során.<br>
             Kérlek, ellenőrizd a megadott adatokat és azok formátumát:
             <ul>
-            <li>Az "egységár" csak szám lehet, és az értéknek +2000 és -2000 között kell lennie.</li>
+            <li>Az "egységár" csak szám lehet, és az értéknek "0" és "2000" között kell lennie.</li>
             <li>A fogyasztási adatok vesszővel legyenek elválasztva.</li>
             <li>Csak számokat lehet megadni.</li>
             <li>Minden oszlopban pontosan 13 értéknek kell szerepelnie.</li>
