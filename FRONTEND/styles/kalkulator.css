@@ -1,14 +1,10 @@
 #datas {
     resize: none;
+    height: 330px;
 }
 
 #calculate, #EditButton {
     transition: all 0.5s;
-}
-
-#calculate:hover, #EditButton:hover {
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .resultDivHidden {
@@ -22,48 +18,44 @@
     justify-content: center;
 }
 
-@media (max-width: 875px) {
-    #resultDiv {
-        padding: 0% !important;
-    }
+.content-wrapper {
+    width: clamp(fit-content, 840px, fit-content) !important;
+}
 
-    #resultDiv h1 {
-        font-size: 28px !important;
-    }
-
-    #resultDiv table thead tr th {
-        font-size: 20px !important;
-    }
-
-    #resultDiv table tbody tr td, #resultDiv table tbody tr td h5{
-        font-size: 14px !important;
+@media (min-width: 1001px) {
+    #calculate:hover, #EditButton:hover {
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
 }
 
-@media (max-width: 645px) {
-    #resultDiv h1 {
-        font-size: 24px !important;
-    }
-
-    #resultDiv table thead tr th {
-        font-size: 16px !important;
-    }
-
-    #resultDiv table tbody tr td, #resultDiv table tbody tr td h5{
-        font-size: 10px !important;
-    }
+.narrow thead {
+    display: none !important;
 }
 
-@media (max-width: 510px) {
-    #resultDiv h1 {
-        font-size: 20px !important;
-    }
+.narrow tbody tr td {
+    display: grid !important;
+    text-align: left !important;
+}
 
-    #resultDiv table thead tr th {
-        font-size: 12px !important;
-    }
+.narrow tbody tr td::before {
+    content: attr(data-cell);
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+}
 
-    #resultDiv table tbody tr td, #resultDiv table tbody tr td h5{
-        font-size: 6px !important;
-    }
+.narrow tbody tr:last-child td::before {
+    background-color: rgb(220,53,69) !important;
+}
+
+.narrow tbody tr:last-child td::before {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.narrow tbody tr:last-child td > h5 {
+    text-align: left !important;
+    align-items: start !important;
+    padding: 8px !important;
 }
