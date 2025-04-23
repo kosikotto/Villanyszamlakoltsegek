@@ -1,4 +1,4 @@
-namespace T0Y9UZ_FullStack_Feleves
+namespace Villanyszamla_backend
 {
     public class Program
     {
