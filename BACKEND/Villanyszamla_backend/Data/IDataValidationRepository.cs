@@ -4,6 +4,6 @@ namespace Villanyszamla_backend.Data
 {
     public interface IDataValidationRepository
     {
-        IEnumerable<SecondaryData> Calculate(IncomeData data);
+        ResponseData Calculate(IncomeData data);
     }
 }

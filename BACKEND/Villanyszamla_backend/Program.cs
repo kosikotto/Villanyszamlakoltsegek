@@ -15,10 +15,9 @@ namespace T0Y9UZ_FullStack_Feleves
             app.MapControllerRoute(name: "default", pattern: "{controller}/{action}/{id?}");
 
             app.UseCors(x => x
-            .AllowCredentials()
+            .AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader()
-            .WithOrigins("http://127.0.0.1:5500"));
+            .AllowAnyHeader());
 
             app.MapGet("/", () => "Neptun kód: T0Y9UZ\nNév: Kosik Ottó László\nFeladat: Villanyszámla költségek");
 

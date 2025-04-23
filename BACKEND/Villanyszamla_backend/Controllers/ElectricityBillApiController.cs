@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Villanyszamla_backend.Models;
 using Villanyszamla_backend.Data;
+using Villanyszamla_backend.Models;
 
-namespace T0Y9UZ_FullStack_Feleves.Controllers
+namespace Villanyszamla_backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -15,10 +15,9 @@ namespace T0Y9UZ_FullStack_Feleves.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<SecondaryData> GetCalculation([FromQuery] IncomeData data)
+        public IActionResult GetCalculation([FromQuery] IncomeData data)
         {
-
-            return dataValidationRepository.Calculate(data);
+            return Ok(dataValidationRepository.Calculate(data));
         }
     }
 }
