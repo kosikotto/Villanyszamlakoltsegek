@@ -5,7 +5,7 @@ namespace Villanyszamla_backend.Data
 {
     public class DataValidationRepository : IDataValidationRepository
     {
-        public IEnumerable<SecondaryData> Calculate(IncomeData data)
+        public ResponseData Calculate(IncomeData data)
         {
             try
             {
@@ -14,53 +14,39 @@ namespace Villanyszamla_backend.Data
 
                 var col_rows = CreateMatrix(data, cols, rows);
 
-                var checkValues = ErtekekCheck(rows, cols, col_rows);
+                double egysegar = double.Parse(data.egysegar, CultureInfo.InvariantCulture);
 
-                if (checkValues)
+                if (egysegar >= -2000 && egysegar <= 2000)
                 {
-                    double egysegar = double.Parse(data.egysegar, CultureInfo.InvariantCulture);
+                    ResponseData datas = new ResponseData();
+                    datas = HavidijKiszamitas(datas, rows, cols, col_rows, egysegar);
 
-                    if (egysegar >= -2000 && egysegar <= 2000)
-                    {
-                        SecondaryData datas = new SecondaryData();
-                        datas = HavidijKiszamitas(datas, rows, cols, col_rows, egysegar);
+                    datas = EveskoltsegKiszamitas(datas, cols, rows);
 
-                        datas = EveskoltsegKiszamitas(datas, cols, rows);
+                    datas = EgymastKovetoEvekAkcio(datas, cols, rows);
 
-                        datas = EgymastKovetoEvekAkcio(datas, cols, rows);
+                    datas.Siker = true;
 
-                        datas.Siker = true;
-
-                        return new List<SecondaryData>() { datas };
-                    }
-
-                    else
-                    {
-                        SecondaryData datas = new SecondaryData();
-
-                        datas.Siker = false;
-
-                        return new List<SecondaryData>() { datas };
-                    }
+                    return datas;
                 }
 
                 else
                 {
-                    SecondaryData datas = new SecondaryData();
+                    ResponseData datas = new ResponseData();
 
                     datas.Siker = false;
 
-                    return new List<SecondaryData>() { datas };
+                    return datas;
                 }
             }
 
             catch (Exception ex)
             {
-                SecondaryData datas = new SecondaryData();
+                ResponseData datas = new ResponseData();
 
                 datas.Siker = false;
 
-                return new List<SecondaryData>() { datas };
+                return datas;
             }
         }
         private string[,] CreateMatrix(IncomeData data, int cols, int rows)
@@ -146,7 +132,7 @@ namespace Villanyszamla_backend.Data
 
             return true;
         }
-        private SecondaryData HavidijKiszamitas(SecondaryData datas, int rows, int cols, string[,] rawData, double egysegar)
+        private ResponseData HavidijKiszamitas(ResponseData datas, int rows, int cols, string[,] rawData, double egysegar)
         {
             Dictionary<Honapok, double[]> HaviKoltes = new Dictionary<Honapok, double[]>();
 
@@ -170,7 +156,7 @@ namespace Villanyszamla_backend.Data
 
             return datas;
         }
-        private SecondaryData EveskoltsegKiszamitas(SecondaryData datas, int cols, int rows)
+        private ResponseData EveskoltsegKiszamitas(ResponseData datas, int cols, int rows)
         {
             for (int i = 0; i < cols; i++)
             {
@@ -186,20 +172,20 @@ namespace Villanyszamla_backend.Data
 
             return datas;
         }
-        private SecondaryData EgymastKovetoEvekAkcio(SecondaryData datas, int cols, int rows)
+        private ResponseData EgymastKovetoEvekAkcio(ResponseData datas, int cols, int rows)
         {
             int counter = 0;
             for (int i = 0; i < cols; i++)
             {
-                double tmp = datas.EvesKoltseg[i];
+                double evesKoltseg = datas.EvesKoltseg[i];
                 if (counter == 2)
                 {
                     double localSumma = 0;
                     for (int j = 0; j < rows - 1; j++)
                     {
-                        var honapocska = (Honapok)j;
-                        datas.HaviKoltes[honapocska][i] -= (int)(datas.HaviKoltes[honapocska][i] * 0.13);
-                        localSumma += datas.HaviKoltes[honapocska][i];
+                        var honap = (Honapok)j;
+                        datas.HaviKoltes[honap][i] -= (int)(datas.HaviKoltes[honap][i] * 0.13);
+                        localSumma += datas.HaviKoltes[honap][i];
                     }
 
                     datas.EvesKoltseg[i] = localSumma;
@@ -208,7 +194,7 @@ namespace Villanyszamla_backend.Data
                     counter = 0;
                 }
 
-                if (tmp > 350000)
+                if (evesKoltseg > 350000)
                 {
                     counter++;
                 }
