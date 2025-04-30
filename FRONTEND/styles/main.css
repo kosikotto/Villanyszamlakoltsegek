@@ -171,12 +171,10 @@ hr, button, table {
 
 @media (max-width: 330px) {
     #wrapper {
-        padding: 6px !important;
         border: none !important;
     }
 
     #info, #info2 {
-        padding: 4px !important;
         border: none !important;
     }
 

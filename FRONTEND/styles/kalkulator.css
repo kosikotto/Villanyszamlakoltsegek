@@ -47,9 +47,6 @@
 
 .narrow tbody tr:last-child td::before {
     background-color: rgb(220,53,69) !important;
-}
-
-.narrow tbody tr:last-child td::before {
     padding-left: 8px !important;
     padding-right: 8px !important;
 }
