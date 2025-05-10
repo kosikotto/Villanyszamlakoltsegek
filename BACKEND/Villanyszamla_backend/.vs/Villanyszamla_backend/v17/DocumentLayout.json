@@ -5,26 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\models\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:models\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\models\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:models\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\models\\honapok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:models\\honapok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\data\\idatavalidationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:data\\idatavalidationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\data\\datavalidationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:data\\datavalidationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,76 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResponseData.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Models\\ResponseData.cs",
-              "RelativeDocumentMoniker": "Models\\ResponseData.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Models\\ResponseData.cs",
-              "RelativeToolTip": "Models\\ResponseData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:03:29.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IncomeData.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Models\\IncomeData.cs",
-              "RelativeDocumentMoniker": "Models\\IncomeData.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Models\\IncomeData.cs",
-              "RelativeToolTip": "Models\\IncomeData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:03:28.356Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Honapok.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Models\\Honapok.cs",
-              "RelativeDocumentMoniker": "Models\\Honapok.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Models\\Honapok.cs",
-              "RelativeToolTip": "Models\\Honapok.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:03:26.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IDataValidationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Data\\IDataValidationRepository.cs",
-              "RelativeDocumentMoniker": "Data\\IDataValidationRepository.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Data\\IDataValidationRepository.cs",
-              "RelativeToolTip": "Data\\IDataValidationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:03:25.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataValidationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Data\\DataValidationRepository.cs",
-              "RelativeDocumentMoniker": "Data\\DataValidationRepository.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Data\\DataValidationRepository.cs",
-              "RelativeToolTip": "Data\\DataValidationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:03:21.202Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,7 +28,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T11:57:33.546Z",
               "EditorCaption": ""
