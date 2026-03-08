@@ -6,20 +6,29 @@ namespace Villanyszamla_backend
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddControllersWithViews();
+            // Ez jó, így hallgat minden IP-n a konténeren belül
+            builder.WebHost.UseUrls("http://*:5063");
+
+            builder.Services.AddControllers();
+            
+            // Ha használsz CORS-t, érdemes itt is regisztrálni a service-t (opcionális, de tiszta)
+            builder.Services.AddCors();
+
+            builder.Services.AddEndpointsApiExplorer();
 
             var app = builder.Build();
 
+            // 1. LÉPÉS: Routing (Útvonal meghatározása)
             app.UseRouting();
 
-            app.MapControllerRoute(name: "default", pattern: "{controller}/{action}/{id?}");
-
+            // 2. LÉPÉS: CORS (Itt kell lennie! A Routing után, de a Map előtt)
             app.UseCors(x => x
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
-            app.MapGet("/", () => "Neptun k�d: T0Y9UZ\nN�v: Kosik Ott� L�szl�\nFeladat: Villanysz�mla k�lts�gek");
+            // 3. LÉPÉS: Végpontok (Itt dől el, melyik Controller fut le)
+            app.MapControllers();
 
             app.Run();
         }

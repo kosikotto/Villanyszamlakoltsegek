@@ -103,7 +103,7 @@ function FetchData(egysegar, datas) {
         datas: datas
     });
 
-    fetch(`http://127.0.0.1:5063/ElectricityBillApi?${queryParams}`, {
+    fetch(`http://localhost:5063/api/electricity-bills?${queryParams}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"

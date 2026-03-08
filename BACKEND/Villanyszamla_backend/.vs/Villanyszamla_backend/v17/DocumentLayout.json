@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\",
+  "WorkspaceRootPath": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|c:\\users\\ifjko\\desktop\\egyetemi anyagok\\4. szemeszter\\full-stack-gyakorlat\\villanyszamlakoltsegek_t0y9uz_kosik\\backend\\villanyszamla_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|d:\\downloads\\villanyszamlakoltsegek-20260304t071851z-1-001\\villanyszamlakoltsegek\\backend\\villanyszamla_backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|d:\\downloads\\villanyszamlakoltsegek-20260304t071851z-1-001\\villanyszamlakoltsegek\\backend\\villanyszamla_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|d:\\downloads\\villanyszamlakoltsegek-20260304t071851z-1-001\\villanyszamlakoltsegek\\backend\\villanyszamla_backend\\controllers\\electricitybillapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F2371-D802-4931-9E81-F7CACA08FF93}|Villanyszamla_backend.csproj|solutionrelative:controllers\\electricitybillapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +22,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T12:02:29.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ElectricityBillApiController.cs",
+              "DocumentMoniker": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\Controllers\\ElectricityBillApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ElectricityBillApiController.cs",
+              "ToolTip": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\Controllers\\ElectricityBillApiController.cs",
+              "RelativeToolTip": "Controllers\\ElectricityBillApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T11:51:54.944Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ifjko\\Desktop\\Egyetemi anyagok\\4. szemeszter\\FULL-STACK-GYAKORLAT\\VILLANYSZAMLAKOLTSEGEK_T0Y9UZ_KOSIK\\BACKEND\\Villanyszamla_backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:57:33.546Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Downloads\\Villanyszamlakoltsegek-20260304T071851Z-1-001\\Villanyszamlakoltsegek\\BACKEND\\Villanyszamla_backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-04T11:35:02.601Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 240,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

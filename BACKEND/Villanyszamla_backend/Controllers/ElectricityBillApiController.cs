@@ -5,7 +5,7 @@ using Villanyszamla_backend.Models;
 namespace Villanyszamla_backend.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/api/electricity-bills")]
     public class ElectricityBillApiController : ControllerBase
     {
         IDataValidationRepository dataValidationRepository { get; set; }
