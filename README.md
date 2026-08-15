@@ -1,47 +1,48 @@
-⚡ Energia-költség Kalkulátor (Full-Stack Projekt)
+# ⚡ Energy Cost Calculator (Full-Stack Project)
 
-Ez a projekt egy webes alkalmazás, amely éves és havi bontású fogyasztási adatok alapján számol energiaköltségeket, figyelembe véve egyedi kedvezményrendszereket is. A projekt célja a Docker-alapú konténerizáció és a saját szerveren történő hostolás (On-premise) gyakorlati megvalósítása volt.
+This project is a web application that calculates energy costs based on annual and monthly consumption data, taking custom discount systems into account. The goal of the project was the practical implementation of Docker-based containerization and self-hosting (On-premise).
 
-***
+---
 
-💡 Technológiai megközelítés & Tanulságok
+## 💡 Technical Approach & Takeaways
 
-Bár a frontend Vanilla HTML/JS alapokon nyugszik, a projekt igazi ereje a háttérben rejlik. A fejlesztés során a legnagyobb kihívást és tanulási pontot az infrastruktúra felépítése jelentette:
+Although the frontend relies on Vanilla HTML/JS, the real power of the project lies in the backend. During development, the biggest challenge and learning point was building the infrastructure:
 
-Docker & Docker Compose: A frontend és a backend külön konténerekben fut, így biztosítva a hordozhatóságot.
+*   **Docker & Docker Compose:** The frontend and backend run in separate containers, ensuring portability.
+*   **Network & Security:** Hosted on my own server (under Apache2), I learned Reverse Proxy configurations, SSL encryption implementation, and how an HTTPS frontend can communicate with an HTTP Docker backend.
 
-Network & Security: Saját szerveren üzemeltetve (Apache2 alatt) megtanultam a Reverse Proxy beállításokat, az SSL titkosítás megvalósítását, és azt, hogyan kommunikálhat egy HTTPS-en futó frontend egy HTTP-s Docker-backenddel.
+---
 
-***
+## 📊 Features
 
-📊 Funkciók
+*   **Matrix-based data entry:** Handling monthly and annual data in a CSV-like format.
+*   **Intelligent Discount System:** If the cost exceeds 350,000 HUF for two consecutive years, the system automatically applies a 13% discount for the following year, which is also indicated visually (with highlighting and a star).
+*   **Responsive Tables:** On mobile devices, the table doesn't just "shrink", but reorganizes into columns, keeping it readable on smaller screens.
 
-Mátrix-alapú adatbevitel: Havi és éves adatok kezelése CSV-szerű formátumban.
+---
 
-Intelligens Kedvezményrendszer: Ha két egymást követő évben a költség meghaladja a 350.000 Ft-ot, a rendszer a következő évre automatikusan 13%-os kedvezményt számol, amit vizuálisan (kiemeléssel és csillaggal) is jelez.
+## 🛠️ Installation and Running (Docker)
 
-Reszponzív Táblázatok: Mobilon a táblázat nem "összemegy", hanem oszlopokba rendeződik, így kisebb kijelzőkön is olvasható marad.
-
-***
-
-🛠️ Telepítés és futtatás (Docker)
-
-A projekt futtatásához elengedhetetlen a Docker és a Docker Compose megléte a számítógépeden. Amennyiben ezek még nincsenek telepítve, a hivatalos oldalon találod meg a telepítési útmutatót minden operációs rendszerhez:
+Docker and Docker Compose are essential to run the project. If you haven't installed them yet, you can find the installation guide for all operating systems on the official website:
 
     https://www.docker.com/products/docker-desktop/
 
-1. lépés: A Backend image felépítése - Navigálj a BACKEND/Villanyszamla_backend mappába:
+**Step 1: Build the Backend image** 
+Navigate to the `BACKEND/Villanyszamla_backend` folder and run:
 
-       docker build -t villanyszamlakoltsegek-backend .
+    docker build -t villanyszamlakoltsegek-backend .
 
-3. lépés: A Frontend image felépítése - Navigálj a FRONTEND/Villanyszamlakoltsegek mappába:
+**Step 2: Build the Frontend image** 
+Navigate to the `FRONTEND/Villanyszamlakoltsegek` folder and run:
 
-        docker build -t villanyszamlakoltsegek-frontend .
+    docker build -t villanyszamlakoltsegek-frontend .
 
-3. lépés: Konténerek indítása - Navigálj a DOCKER könyvtárba (ahol a docker-compose.yaml található):
+**Step 3: Start the containers** 
+Navigate to the `DOCKER` directory (where the `docker-compose.yaml` is located) and run:
 
-        docker compose up
+    docker compose up
 
-4. lépés: Megnyitás böngészőben - Az alkalmazás elérhető a következő címen:
+**Step 4: Open in browser** 
+After a successful start, the application is accessible at the following address:
 
-       http://127.0.0.1:8081/
+    http://127.0.0.1:8081/
